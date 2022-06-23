@@ -1,15 +1,24 @@
-//Addition
-add = 5 + 2
-console.log("Additon: " + add)
+var operator = prompt(
+  "What do you want to calculate?: Addition, Subtraction, Multiplication, Division"
+)
+console.log("Arithematic Operator")
 
-//subtraction
-sub = 5 - 2
-console.log("Subtraction: " + sub)
+var num1 = parseInt(prompt("Enter Num1: ")) //convert string to Integer
 
-//multiplication
-mul = 5 * 2
-console.log("Multiplication: " + mul)
+var operator = prompt("Enter Operator to use: +, -, *, ")
 
-//division
-div = 5 / 2
-console.log("Division: " + div)
+var num2 = parseInt(prompt("Enter Num2: ")) //convert string to Integer
+
+let myresult
+
+if (operator == "+") {
+  myresult = num1 + num2
+} else if (operator == "-") {
+  myresult = num1 - num2
+} else if (operator == "*") {
+  myresult = num1 * num2
+} else if (operator == "/") {
+  myresult = num1 / num2
+}
+
+alert(myresult)
